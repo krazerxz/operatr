@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'jquery-rails'
 gem 'rails'
 gem 'pg'
 gem 'puma'
 gem 'sass-rails'
+gem 'slim'
 gem 'uglifier'
 gem 'therubyracer'
 
