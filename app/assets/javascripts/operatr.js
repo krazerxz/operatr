@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     navigator.getUserMedia(constraints, function(stream){
       window.localStream = stream;
-    }, function(){ console.log("og"); });
+    }, function(){ window.alert("Get a better browser"); });
   });
 
   peer.on('call', function(call) {
@@ -21,7 +21,13 @@ $(document).ready(function(){
   });
 
   function setNewCall(call) {
+    call.on('stream', function(stream) {
+      console.log('streamRecieved', stream);
+      $('#audio')[0].src = (URL || webkitURL || mozURL).createObjectURL(stream);
+
+    });
     window.existingCall = call;
+    $('#status').text("in-call");
   }
 
   function closeExistingCall() {
