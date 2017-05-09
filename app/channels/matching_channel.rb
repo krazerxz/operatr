@@ -1,19 +1,18 @@
 class MatchingChannel < ApplicationCable::Channel
-  # awaiting
-  # in-call
+  AWAITING = "awaiting"
+  IN_CALL = "in_call"
 
   def subscribed
     puts ">>>>> client subscribed"
   end
 
-  def unsubscribed
-    # Remove user ID from awaiting
+  def unsubscribed data
     puts ">>>>> client unsubscribed"
   end
 
   def peer_id data
-    peer_id = data['pid']
-    puts ">>>>> Client ID: #{peer_id}"
-    # Add IT to awaiting
+    id = data['pid']
+    puts ">>>>> Client ID: #{id}"
+    UserPool.new.add pool: AWAITING, id: id
   end
 end
