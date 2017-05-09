@@ -15,6 +15,15 @@ gem "turbolinks"
 
 group :development, :test do
   gem "byebug"
+
+  gem "capistrano"
+  gem "capistrano-bundler"
+  gem "capistrano-rails"
+  gem "capistrano-rbenv"
+  gem "capistrano3-puma"
+end
+
+group :test do
   gem "rubocop"
 end
 
