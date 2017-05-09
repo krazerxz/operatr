@@ -1,24 +1,24 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'jquery-rails'
-gem 'rails'
-gem 'redis'
-gem 'pg'
-gem 'puma'
-gem 'sass-rails'
-gem 'slim'
-gem 'uglifier'
-gem 'therubyracer'
+gem "jquery-rails"
+gem "pg"
+gem "puma"
+gem "rails"
+gem "redis"
+gem "sass-rails"
+gem "slim"
+gem "therubyracer"
+gem "uglifier"
 
-gem 'turbolinks'
-gem 'jbuilder'
+gem "jbuilder"
+gem "turbolinks"
 
 group :development, :test do
-  gem 'byebug'
-  gem 'rubocop'
+  gem "byebug"
+  gem "rubocop"
 end
 
 group :development do
-  gem 'web-console'
-  gem 'listen'
+  gem "listen"
+  gem "web-console"
 end
