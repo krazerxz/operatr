@@ -13,6 +13,6 @@ class MatchingChannel < ApplicationCable::Channel
   def peer_id data
     id = data['pid']
     puts ">>>>> Client ID: #{id}"
-    UserPool.new.add pool: AWAITING, id: id
+    #UserPool.new.add pool: AWAITING, id: id
   end
 end
