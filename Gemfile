@@ -2,7 +2,6 @@ source "https://rubygems.org"
 
 gem "coffee-rails"
 gem "jquery-rails"
-gem "pg"
 gem "puma"
 gem "rails"
 gem "sass-rails"

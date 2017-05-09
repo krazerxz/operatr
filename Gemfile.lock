@@ -108,7 +108,6 @@ GEM
       mini_portile2 (~> 2.1.0)
     parser (2.4.0.0)
       ast (~> 2.2)
-    pg (0.20.0)
     powerpack (0.1.1)
     puma (3.8.2)
     rack (2.0.1)
@@ -210,7 +209,6 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   listen
-  pg
   puma
   rails
   rubocop
