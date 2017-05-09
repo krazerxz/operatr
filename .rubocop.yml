@@ -1,0 +1,78 @@
+Rails:
+ Enabled: true
+Blank:
+  Exclude:
+    - lib/tasks/rails_best_practices.rake
+AllCops:
+  Exclude:
+    # Generated files
+    - Rakefile
+    - bin/*
+    - config/application.rb
+    - config/boot.rb
+    - config/environment.rb
+    - config/environments/*
+    - config/initializers/assets.rb
+    - config/initializers/cookies_serializer.rb
+    - config/initializers/devise.rb
+    - config/initializers/session_store.rb
+    - config/initializers/simple_form_bootstrap.rb
+    - config/initializers/simple_form.rb
+    - config/schedule.rb
+    - db/**/*
+    - app/services/update_all_data.rb
+    - app/services/sam_knows/data_getter.rb
+    - lib/tasks/cucumber.rake
+    - lib/tasks/default.rake
+    - script/cucumber
+    - spec/rails_helper.rb
+    - spec/spec_helper.rb
+    - features/support/pages/**/*
+    - vendor/**/*
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+Documentation:
+  Enabled: false
+Security/Eval:
+  Enabled: false
+Metrics/LineLength:
+  Max: 140
+  Enabled: false
+Metrics/MethodLength:
+  Max: 5
+  Enabled: false
+Metrics/ClassLength:
+  Max: 150
+Metrics/ParameterLists:
+  Max: 4
+Rails/FindEach:
+  Enabled: false
+Style/SpaceInsideBlockBraces:
+  SpaceBeforeBlockParameters: false
+Style/MethodDefParentheses:
+  EnforcedStyle: require_no_parentheses
+Style/HashSyntax:
+  Exclude:
+    - lib/tasks/*
+Style/PredicateName:
+  NamePrefixBlacklist:
+    - is_
+Style/AndOr:
+  EnforcedStyle: conditionals
+Style/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+Style/BlockDelimiters:
+  EnforcedStyle: semantic
+  Exclude:
+    - factories/**/*
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+    - lib/tasks/*
+    - config/routes.rb
+Metrics/AbcSize:
+  Max: 18
