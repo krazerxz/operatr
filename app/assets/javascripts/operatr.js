@@ -8,6 +8,7 @@ $(document).ready(function(){
   });
 
   peer.on('open', function(id){
+    App.matching.send_peer_id(id)
     $('#pid').text(id);
     $('#status').text("connected");
   });
