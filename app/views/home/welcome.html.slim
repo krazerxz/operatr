@@ -3,16 +3,16 @@
     | Operatr
 
 .main
-  h2
+  h1
+    | Operatr: 
     span#status
       | disconnected
 
   h2
-    | My ID is
+    | My ID is 
     span#pid
 
   input#rid type="text" placeholder="destination id"
-  br
-  input#call.button type="button" value="Start Call"
+  input#call.button type="button" value="call"
 
-  <audio id="audio" autoplay/>
+  audio#audio
