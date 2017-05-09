@@ -1,15 +1,18 @@
-h1
-	| Operatr: 
-	span#status
-		| disconnected
+.header
+  h1#title.animated.bounceIn
+    | Operatr
 
-h2
-  | My ID is 
-  span#pid
+.main
+  h2
+    span#status
+      | disconnected
 
-h2 Start call
+  h2
+    | My ID is
+    span#pid
 
-input#rid type="text" placeholder="destination id"
-input#call.button type="button" value="Call"
+  input#rid type="text" placeholder="destination id"
+  br
+  input#call.button type="button" value="Start Call"
 
-<audio id="audio" autoplay/>
+  <audio id="audio" autoplay/>

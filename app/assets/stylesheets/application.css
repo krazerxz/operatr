@@ -13,3 +13,68 @@
  *= require_tree .
  *= require_self
  */
+
+h1,h2,h3,h4,h5,h6,p {
+  font-family: 'Josefin Slab', serif;
+}
+
+.header {
+  margin: 10%;
+  text-align: center;
+}
+
+.main {
+  text-align: center;
+}
+
+.header h1 {
+  font: 100%/1.5 "Josefin Slab", Verdana, sans-serif;
+}
+
+#title {
+  font-size: 9em;
+  color: #FF6138;
+}
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background: #FFFF9D;
+  background: -webkit-linear-gradient(#FFFF9D, #00A388);
+  background: -o-linear-gradient(#FFFF9D, #00A388);
+  background: -moz-linear-gradient(#FFFF9D, #00A388);
+  background: -ms-linear-gradient(#FFFF9D, #00A388);
+  background: linear-gradient(#FFFF9D, #00A388);
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+input, #call {
+  background-color: transparent;
+  border-color: #FF6138;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;`
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+}
+
+#rid {
+  width: 500px;
+  height: 50px;
+  font-size: 2em;
+  font-color: #FF6138;
+}
