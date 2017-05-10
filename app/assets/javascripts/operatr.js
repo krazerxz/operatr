@@ -1,6 +1,14 @@
 $(document).ready(function(){
 
-  var peer = new Peer({key: 'b5q5smtw3dr96bt9', debug: 3, config: { 'iceServers': [ { 'url': 'stun:stun.l.google.com:19302' }]}});
+  var peer = new Peer({
+    key: 'b5q5smtw3dr96bt9',
+    debug: 3,
+    config: { 'iceServers': [
+      { 'url': 'stun:stun.l.google.com:19302' },
+      { 'url': 'turn:numb.viagenie.ca', 'credential': 'F*8Y59,Etx![WZ;g', 'username': 'cpom40ba@gmail.com' }
+    ]}
+  });
+
   var constraints = { audio: true, video: false };
 
   navigator.mediaDevices.getUserMedia(constraints).then(function(stream){
