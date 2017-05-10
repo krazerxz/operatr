@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
   var peer = new Peer({
+    port: 443,
     host: 'peerjs.chrispomfret.com',
-    port: 4001,
     key: 'p33rjs',
     debug: 3,
     config: { 'iceServers': [
