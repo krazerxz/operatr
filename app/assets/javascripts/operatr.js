@@ -4,8 +4,7 @@ $(document).ready(function(){
     key: 'b5q5smtw3dr96bt9',
     debug: 3,
     config: { 'iceServers': [
-      { 'url': 'stun:stun.l.google.com:19302' },
-      { 'url': 'turn:numb.viagenie.ca', 'credential': 'F*8Y59,Etx![WZ;g', 'username': 'cpom40ba@gmail.com' }
+      { url: 'stun:stun.l.google.com:19302' }
     ]}
   });
 
