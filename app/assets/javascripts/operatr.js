@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
+  //host: 'operatr.chrispomfret.com',
+  //port: 4001,
+  //key: 'p33rjs',
   var peer = new Peer({
-    host: 'operatr.chrispomfret.com',
-    port: 4001,
-    key: 'p33rjs',
+    key: 'b5q5smtw3dr96bt9',
     debug: 3,
     config: { 'iceServers': [
       { url: 'stun:stun.l.google.com:19302' }
